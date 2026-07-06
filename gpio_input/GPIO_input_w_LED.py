@@ -14,8 +14,6 @@ GPIO.setup(ledPin, GPIO.OUT)
 # Run until ctrl + C
 try:
     while True:
-        # Reset output to 0
-        GPIO.output(ledPin, False)
 
         # Read input from pin 40
         readVal=GPIO.input(inPin)
