@@ -9,8 +9,8 @@ delay = 0.1
 inPin = 40
 ledPin = 11
 
-# Set pin 40 as input, pin 11 as output
-GPIO.setup(inPin, GPIO.IN)
+# Set pin 40 as input and set internal pull up resistor. pin 11 as output
+GPIO.setup(inPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(ledPin, GPIO.OUT)
 
 # Run until ctrl + C
@@ -26,7 +26,8 @@ try:
             GPIO.output(ledPin, True)
         else:
             GPIO.output(ledPin, False)
-        sleepd(delay)
+        sleep(delay)
+
 except KeyboardInterrupt:
     GPIO.cleanup()
     print()
