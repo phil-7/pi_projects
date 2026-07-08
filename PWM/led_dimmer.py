@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BOARD)
 
 # Set variables
 decimation = (1/8) * 100
-delay = 0.1
+delay = 0.15
 duty_cycle = 0
 
 # Set pin numbers
