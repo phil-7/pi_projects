@@ -43,5 +43,4 @@ try:
 except KeyboardInterrupt:
     myPWM.stop()
     GPIO.cleanup()
-    del myPWM
     print()
