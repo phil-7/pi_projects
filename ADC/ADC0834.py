@@ -96,5 +96,5 @@ def getResult(channel=0):
 
     GPIO.output(ADC_CS, 1)
 
-    print(f"dat1={dat1:08b} ({dat1})  dat2={dat2:08b} ({dat2})  match={dat1==dat2}")
+    # print(f"dat1={dat1:08b} ({dat1})  dat2={dat2:08b} ({dat2})  match={dat1==dat2}")
     return dat1 if dat1 == dat2 else 0
